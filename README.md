@@ -1,3 +1,26 @@
+# BlindSide code challenge (job test)
+
+### **Passwod for the auth system:** 12345 
+
+**Coding Challenge**
+
+This is a small test for a job application, I take the videos from Pexels API so maybe can be kinda slow for that reason.
+
+Create a UI to browse videos. The UI will have the following requirements:
+- You can leave comments on the video
+- Comments can be toggled on/off
+- Related videos should be shown on the video UI
+- And overview page of all videos should be shown
+- The system should be protected by a login
+
+You can make the following assumptions
+- Videos should be loaded as persisted data (Do not use Youtube)
+- Comments should not be saved
+- Login should authenticate against a separate service
+
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
