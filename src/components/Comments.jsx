@@ -20,10 +20,10 @@ export default function Comments() {
         setShowComments(!showComments);
     }
 
-    // useEffect(() => {
-    //     setComments([]);
-    //     setShowComments(false);
-    // }, [id]);
+    useEffect(() => {
+        setComments([]);
+        setShowComments(false);
+    }, [id]);
 
 
     return(
@@ -49,8 +49,8 @@ export default function Comments() {
                     <div className="flex flex-col divide-y-2">
                         {comments.map((comment, index) => {
                             return (
-                                <div className="py-5">
-                                    <span key={index} className="flex gap-3 items-center font-bold">
+                                <div key={index} className="py-5">
+                                    <span  className="flex gap-3 items-center font-bold">
                                         <img src="https://randomuser.me/api/portraits/men/3.jpg" width={35} height={35} alt="profile picture"
                                         className="rounded-full" />
                                         Random Name

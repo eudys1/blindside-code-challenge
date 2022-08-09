@@ -34,9 +34,9 @@ export default function HomePage() {
 
 	}, []);
     
-    console.log(videos);
+    // console.log(videos);
 	return (
-		<div className=" flex flex-wrap gap-6 mx-5 w-fit">
+		<div className=" flex flex-wrap justify-center gap-6 mx-5 w-fit">
 			{
                 videos.map((video) => {
                     return (

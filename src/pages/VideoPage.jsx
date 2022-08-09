@@ -51,17 +51,17 @@ export default function VideoPage() {
         getRelatedVideos();
     } , [id]);
 
-    console.log(id);
 
     return(
         <div className="flex flex-col md:flex-row gap-20 mx-6">
 
             <div className='md:w-[70%]'>
                 <ReactPlayer url={videoURL} controls={true} width="100%"/>
+                <h2 className='text-2xl font-bold my-5'>Video title</h2>
                 <Comments/>
             </div>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col items-center gap-6">
                 {
                     videos.map((video) => {
                         return (
